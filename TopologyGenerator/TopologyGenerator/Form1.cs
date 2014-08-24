@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TopologyGenerator
 {
-    public partial class Form1 : Form
+    public partial class MainWnd : Form
     {
-        public Form1()
+        public MainWnd()
         {
             InitializeComponent();
         }
