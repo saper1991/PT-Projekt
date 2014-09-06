@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.gb1 = new System.Windows.Forms.GroupBox();
-            this.listOfFilesListBox = new System.Windows.Forms.ListBox();
-            this.LoadFileButton = new System.Windows.Forms.Button();
             this.DeleteFileButton = new System.Windows.Forms.Button();
+            this.LoadFileButton = new System.Windows.Forms.Button();
+            this.listOfFilesListBox = new System.Windows.Forms.ListBox();
             this.gb2 = new System.Windows.Forms.GroupBox();
             this.GenerateButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.TopologyPBox = new System.Windows.Forms.PictureBox();
             this.gb1.SuspendLayout();
+            this.gb2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TopologyPBox)).BeginInit();
             this.SuspendLayout();
             // 
             // gb1
@@ -50,13 +53,15 @@
             this.gb1.TabStop = false;
             this.gb1.Text = "Lista plików:";
             // 
-            // listOfFilesListBox
+            // DeleteFileButton
             // 
-            this.listOfFilesListBox.FormattingEnabled = true;
-            this.listOfFilesListBox.Location = new System.Drawing.Point(6, 19);
-            this.listOfFilesListBox.Name = "listOfFilesListBox";
-            this.listOfFilesListBox.Size = new System.Drawing.Size(208, 329);
-            this.listOfFilesListBox.TabIndex = 1;
+            this.DeleteFileButton.Location = new System.Drawing.Point(111, 354);
+            this.DeleteFileButton.Name = "DeleteFileButton";
+            this.DeleteFileButton.Size = new System.Drawing.Size(103, 36);
+            this.DeleteFileButton.TabIndex = 2;
+            this.DeleteFileButton.Text = "Usuń plik";
+            this.DeleteFileButton.UseVisualStyleBackColor = true;
+            this.DeleteFileButton.Click += new System.EventHandler(this.DeleteFileButton_Click);
             // 
             // LoadFileButton
             // 
@@ -66,18 +71,19 @@
             this.LoadFileButton.TabIndex = 1;
             this.LoadFileButton.Text = "Wczytaj Plik";
             this.LoadFileButton.UseVisualStyleBackColor = true;
+            this.LoadFileButton.Click += new System.EventHandler(this.LoadFileButton_Click);
             // 
-            // DeleteFileButton
+            // listOfFilesListBox
             // 
-            this.DeleteFileButton.Location = new System.Drawing.Point(111, 354);
-            this.DeleteFileButton.Name = "DeleteFileButton";
-            this.DeleteFileButton.Size = new System.Drawing.Size(103, 36);
-            this.DeleteFileButton.TabIndex = 2;
-            this.DeleteFileButton.Text = "Usuń plik";
-            this.DeleteFileButton.UseVisualStyleBackColor = true;
+            this.listOfFilesListBox.FormattingEnabled = true;
+            this.listOfFilesListBox.Location = new System.Drawing.Point(6, 19);
+            this.listOfFilesListBox.Name = "listOfFilesListBox";
+            this.listOfFilesListBox.Size = new System.Drawing.Size(208, 329);
+            this.listOfFilesListBox.TabIndex = 1;
             // 
             // gb2
             // 
+            this.gb2.Controls.Add(this.TopologyPBox);
             this.gb2.Location = new System.Drawing.Point(238, 12);
             this.gb2.Name = "gb2";
             this.gb2.Size = new System.Drawing.Size(507, 348);
@@ -93,6 +99,7 @@
             this.GenerateButton.TabIndex = 3;
             this.GenerateButton.Text = "Wygeneruj Topologię";
             this.GenerateButton.UseVisualStyleBackColor = true;
+            this.GenerateButton.Click += new System.EventHandler(this.GenerateButton_Click);
             // 
             // ExitButton
             // 
@@ -102,19 +109,32 @@
             this.ExitButton.TabIndex = 4;
             this.ExitButton.Text = "Zamknij Program";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // TopologyPBox
+            // 
+            this.TopologyPBox.Location = new System.Drawing.Point(6, 19);
+            this.TopologyPBox.Name = "TopologyPBox";
+            this.TopologyPBox.Size = new System.Drawing.Size(495, 323);
+            this.TopologyPBox.TabIndex = 0;
+            this.TopologyPBox.TabStop = false;
             // 
             // MainWnd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 420);
+            this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.GenerateButton);
             this.Controls.Add(this.gb2);
             this.Controls.Add(this.gb1);
             this.Name = "MainWnd";
+            this.ShowIcon = false;
             this.Text = "Topology Generator";
             this.gb1.ResumeLayout(false);
+            this.gb2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TopologyPBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -128,6 +148,7 @@
         private System.Windows.Forms.GroupBox gb2;
         private System.Windows.Forms.Button GenerateButton;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.PictureBox TopologyPBox;
     }
 }
 
