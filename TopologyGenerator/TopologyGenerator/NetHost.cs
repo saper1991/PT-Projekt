@@ -45,5 +45,10 @@ namespace TopologyGenerator
             }
         }
 
+        public string[] GetHosts()
+        {
+            return Hosts;
+        }
+
     }
 }

@@ -137,10 +137,14 @@ namespace TopologyGenerator
 
         private void GenerateButton_Click(object sender, EventArgs e)
         {
-            string selected = (string)listOfFilesListBox.SelectedItem;
-            string[] conn = getConnections(selected);
+            for(int i = 0 ; i < ListOfFiles.Count ; i++)
+            {
+                ListOfFiles[i].SetHosts(getHostNames(getConnections(ListOfFiles[i].GetFileName())));
+            }
 
-            string[] hosts = getHostNames(conn);
+            Matrix matr = new Matrix(ListOfFiles);
+            matr.Display();
+             
         }
 
         private string[] getConnections(string Filename)
