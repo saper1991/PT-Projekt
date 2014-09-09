@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopologyGenerator
 {
-    class Matrix
+    public class Matrix
     {
         private int count = 0;
         private int[,] matrix = null;
@@ -69,6 +69,22 @@ namespace TopologyGenerator
             }
 
             System.Windows.Forms.MessageBox.Show(mes);
+        }
+
+        public int[,] getMatrix()
+        {
+            return matrix;
+        }
+
+        public string[] getHosts()
+        {
+            List<string> result = new List<string>();
+
+            for(int i = 0 ; i < hosts.Count ; i++)
+            {
+                result.Add(hosts[i].GetFileName());
+            }
+            return result.ToArray();
         }
     }
 }

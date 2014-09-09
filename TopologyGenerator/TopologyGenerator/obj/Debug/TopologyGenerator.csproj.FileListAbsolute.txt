@@ -7,3 +7,4 @@ D:\Projekty\PT-Projekt\TopologyGenerator\TopologyGenerator\obj\Debug\TopologyGen
 D:\Projekty\PT-Projekt\TopologyGenerator\TopologyGenerator\obj\Debug\TopologyGenerator.csproj.GenerateResource.Cache
 D:\Projekty\PT-Projekt\TopologyGenerator\TopologyGenerator\obj\Debug\TopologyGenerator.exe
 D:\Projekty\PT-Projekt\TopologyGenerator\TopologyGenerator\obj\Debug\TopologyGenerator.pdb
+D:\Projekty\PT-Projekt\TopologyGenerator\TopologyGenerator\obj\Debug\TopologyGenerator.TopologyWnd.resources

@@ -1,0 +1,9 @@
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\bin\Debug\Graph Test.exe.config
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\bin\Debug\Graph Test.exe
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\bin\Debug\Graph Test.pdb
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\obj\Debug\Graph_Test.Form1.resources
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\obj\Debug\Graph_Test.Properties.Resources.resources
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\obj\Debug\Graph Test.csproj.GenerateResource.Cache
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\obj\Debug\Graph Test.exe
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\obj\Debug\Graph Test.pdb
+D:\Projekty\PT-Projekt\TopologyGenerator\Graph Test\obj\Debug\Graph Test.csprojResolveAssemblyReference.cache

@@ -84,7 +84,6 @@ namespace TopologyGenerator
                         }
                     }
 
-                    string isplugged = "";
                     for (; count < tmp.Length; count++)
                     {
                         if (tmp[count] != 32)
@@ -143,8 +142,9 @@ namespace TopologyGenerator
             }
 
             Matrix matr = new Matrix(ListOfFiles);
-            matr.Display();
-             
+
+            TopologyWnd tplg = new TopologyWnd(matr);
+            tplg.Show();
         }
 
         private string[] getConnections(string Filename)
@@ -190,6 +190,5 @@ namespace TopologyGenerator
 
             return results.ToArray();
         }
-
     }
 }
